@@ -201,7 +201,7 @@ const Register = () => {
           <div className="w-[150px] flex items-center">
             <img src={logo} alt="Logo Easypay" className="" />
           </div>
-          <NavLink to="/home" className="font-bold underline">
+          <NavLink to="/login" className="font-bold underline">
             Atras
           </NavLink>
         </div>
@@ -216,6 +216,7 @@ const Register = () => {
               id="email"
               placeholder="Correo electrónico"
               autoComplete="off"
+              value={data.email}
               onChange={(e) => changeValue("email", e.target.value)}
             />
 
@@ -226,6 +227,7 @@ const Register = () => {
                 tipo="password"
                 id="password"
                 placeholder="Password"
+                value={data.password}
                 onChange={(e) => changeValue("password", e.target.value)}
               />
 
@@ -235,6 +237,7 @@ const Register = () => {
                 tipo="password"
                 id="repeatPassword"
                 placeholder="Confirm your password"
+                value={data.repeatPassword}
                 onChange={(e) => changeValue("repeatPassword", e.target.value)}
               />
             </div>
@@ -247,6 +250,7 @@ const Register = () => {
                 tipo="text"
                 id="nombre"
                 placeholder="Nombre"
+                value={data.nombre}
                 onChange={(e) => changeValue("nombre", e.target.value)}
               />
               <div className="flex gap-x-5 w-[100%]">
@@ -256,6 +260,7 @@ const Register = () => {
                   tipo="text"
                   id="apPaterno"
                   placeholder="Apellido Paterno"
+                  value={data.apPaterno}
                   onChange={(e) => changeValue("apPaterno", e.target.value)}
                 />
                 {/* Apellido materno */}
@@ -264,6 +269,7 @@ const Register = () => {
                   tipo="text"
                   id="apMaterno"
                   placeholder="Apellido Materno"
+                  value={data.apMaterno}
                   onChange={(e) => changeValue("apMaterno", e.target.value)}
                 />
               </div>
@@ -272,6 +278,7 @@ const Register = () => {
                 titulo="Fecha de nacimiento"
                 tipo="date"
                 id="fechaNacimiento"
+                value={data.fechaNacimiento}
                 onChange={(e) => changeValue("fechaNacimiento", e.target.value)}
               />
               {/* Sexo */}
@@ -282,6 +289,7 @@ const Register = () => {
                 <select
                   name="sexo"
                   id="sexo"
+                  value={data.sexo}
                   className="border-b py-2 border-gray-200 outline-none w-full"
                   onChange={(e) => changeValue("sexo", e.target.value)}
                 >
@@ -302,6 +310,7 @@ const Register = () => {
                   tipo="number"
                   id="cp"
                   placeholder="Código postal"
+                  value={data.cp}
                   onChange={(e) => changeValue("cp", e.target.value)}
                 />
                 {/* ciudad */}
@@ -310,6 +319,7 @@ const Register = () => {
                   tipo="text"
                   id="ciudad"
                   placeholder="Ciudad"
+                  value={data.ciudad}
                   onChange={(e) => changeValue("ciudad", e.target.value)}
                 />
               </div>
@@ -320,6 +330,7 @@ const Register = () => {
                   tipo="text"
                   id="colonia"
                   placeholder="Colonia"
+                  value={data.colonia}
                   onChange={(e) => changeValue("colonia", e.target.value)}
                 />
                 {/* Calle */}
@@ -328,6 +339,7 @@ const Register = () => {
                   tipo="text"
                   id="calle"
                   placeholder="Calle"
+                  value={data.calle}
                   onChange={(e) => changeValue("calle", e.target.value)}
                 />
               </div>
@@ -338,6 +350,7 @@ const Register = () => {
                   tipo="number"
                   id="numExt"
                   placeholder="Número exterior"
+                  value={data.numExt}
                   onChange={(e) => changeValue("numExt", e.target.value)}
                 />
                 {/* Num Interior */}
@@ -346,6 +359,7 @@ const Register = () => {
                   tipo="number"
                   id="numInt"
                   placeholder="Número interior"
+                  value={data.numInt}
                   onChange={(e) => changeValue("numInt", e.target.value)}
                 />
               </div>
@@ -364,6 +378,7 @@ const Register = () => {
                 name="check"
                 id="check"
                 className="w-8"
+                value={data.privacidad}
                 onChange={(e) => changeValue("privacidad", !data.privacidad)}
               />
             </div>
